@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <!-- Heading -->
+    <h1>Heading</h1>
+    <h2>Heading</h2>
+    <h3>Heading</h3>
+    <h4>Heading</h4>
+    <h5>Heading</h5>
+
+    <!-- horizontal line -->
+    <hr>
+
+
+
+    <!-- Paragraph -->
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+        Sequi non fuga alias omnis illum perferendis! 
+        Consequuntur inventore repellat repudiandae eum.</p>
+
+        <!-- Anchor -->
+        <!-- this is example of absolute link -->
+        <a href="https://www.google.com">Google</a>
+
+        <!-- this is example of relative link -->
+        <a href="./about.html">about</a>
+
+
+        <!--  href is attribute  -->
+
+            <!-- break tag -->
+        <br>
+
+        <!-- Image  -->
+        <img src="rudra.png" alt="rudra pic">
+            <!-- in img tag if we set width/height any one other will automatically get set -->
+
+
+
+
+        <!-- bold italic and underlined -->
+        <i>Italic</i>
+        <b>Bold</b>
+        <strong>Strong</strong>
+        <u>underlined</u>
+        
+
+        <!-- subscript and superscript tags -->
+
+        <p>CO<sub>2</sub></p>
+        <p>a<sup>2</sup>b<sup>2</sup></p>
+
+        <!-- if you want to render same text then use pre tag -->
+
+        <pre>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. 
+                Sequi non fuga alias omnis illum perferendis! 
+                Consequuntur inventore repellat repudiandae eum.
+        </pre>
+
+            <!-- Div is a container it blocks entire, it always takes full length -->
+        <div>
+
+            <!-- To shrink big sentences got to command pallete and search View: word toggle wrap. -->
+            <!-- div , p are expamole of block element -->
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Sint aliquid vel cumque repellat? Quod quaerat voluptates dolorem enim dolore ducimus, mollitia velit sunt suscipit nemo et quibusdam minima odit nulla expedita cupiditate quos esse libero quae voluptatem magni veritatis quidem perferendis! Culpa quae inventore reprehenderit architecto cumque nostrum atque maxime.</p>
+
+
+
+            <!-- Example of block elements -->
+            <!-- <address></address>,<article></article>,<aside>,<blockquote>,<canvas>,<dd>,<div>,<dl>,<dt>,<fieldset>,<figcaption>,<figure>,<footer>,<form action=""></form>,h1-h6,header,hr,li,<main>,<nav>,<noscript></noscript><col><p><pre><section><table><ul><video src=""></video></ul></table></section></pre></p> -->
+            
+        </div>
+        
+        <!-- span takes width as necessary -->
+        <!-- span is exmaple of inline element  -->
+        <span>
+            I am your hero
+            <!-- Example of inline elements -->
+            <!-- <img src="" alt="">
+            <a href=""></a>
+            <span>
+            </span>
+            <small></small> -->
+        </span>
+
+
+
+        <!-- List to display in List -->
+        <!-- Unordered list  -->
+        <!-- <ul type="square"> /circle/disc -->
+            <!-- Search ul types in google -->
+            <ul type="disc">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ul>
+        <!-- Ordered list   type: I/i/a/A-->
+        <ol type="A">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+        </ol>
+
+            <!-- 
+                Table content 
+                th - table heading
+                tr - table row
+                td - data
+                thead- wraps table head
+                tbody - wraps table body
+                colspan - one heading with differnt data
+            -->
+        <Table>
+            <table>
+                <thead>
+                    <caption>Student details</caption>
+                    <tr>
+                        <th>Fname</th>
+                        <th colspan="3">Lname</th>
+                        <th>Address</th>
+                        <th>phone no</th>
+                    </tr>
+                </thead>
+                <tr>
+                    <td>Rudra</td>
+                    <td>Patil</td>
+                    <td>Patil</td>
+                    <td>Patil</td>
+                    <td>hibdalga</td>
+                    <td>23231</td>
+                </tr>
+                <tr>
+                    <td>smita</td>
+                    <td>Patil</td>
+                </tr>
+            </table>
+
+        </Table>
+
+
+        <!-- Html forms used to take inputs from user -->
+
+        <!-- label is used for clicking on content also it should work -->
+
+
+        <form action="">
+            <input type="text" placeholder="write msg"> <br>
+            <label for="id1">
+                <input type="radio" name="first" id="id1">first
+            </label>
+            <label for="id2">
+                <input type="radio" name="first" id="id2">second
+            </label>
+            <label for="id3">
+                <input type="radio" name="first" id="id3">third
+            </label> <br>
+            <input type="checkbox" name="need" id="need"> <label for="need"> canteen</label>
+            <br>
+            <textarea name="text-details" id="detail" cols="15" rows="10"></textarea>
+            <br>
+            <select name="car" id="car">
+                <option value="selection">Select the car</option>
+                <option value="omni">omni</option>
+                <option value="alto">alto</option>
+                <option value="altroz">altroz</option>
+            </select>
+        </form>
+
+
+        <!-- <Iframe></Iframe> is used for video content -->
+
+        <video src="rudra.mp3" controls></video>
+
+</body>
+</html>
