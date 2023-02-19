@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Position property</title>
+    <style>
+      /* static: default position. top/left/right/bottom/z-index has no effect */
+      /* relative: t/l/b/r/z-index will now work. otherwise the element is in the flow of document like static. */
+      /* absolute: Element is removed from the flow & is relatively positioned to its first non-static ancestor. t/l/b/r works */
+      /* fixed: just like absolute except the element is positioned relative to browser window  */
+
+      * {
+        margin: 0;
+        padding: 0;
+      }
+      header {
+        background: black;
+        color: white;
+        height: 50px;
+      }
+      li {
+        display: inline;
+      }
+      .container {
+        background: yellow;
+        height: 800px;
+        width: 800px;
+        margin: auto;
+        position: relative;
+      }
+      p {
+        border: 2px solid red;
+        text-align: center;
+      }
+      .box {
+        background: aqua;
+        border: 2px solid black;
+        width: 200px;
+        height: 200px;
+        /* position: relative; */
+        position: absolute;
+        /* top:10px;
+        left: 40px; */
+        box-sizing: border-box;
+      }
+      .box2 {
+        background: blueviolet;
+        width: 200px;
+        height: 200px;
+        /* position:relative; */
+        /* position:absolute; */
+        /* top:20px;
+        left:100px; */
+        border: 2px solid red;
+        box-sizing: border-box;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+        </ul>
+      </nav>
+    </header>
+    <div class="container">
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Atque vitae
+        nostrum corporis incidunt quibusdam iusto quisquam ab quia dolores
+        architecto.
+      </p>
+      <div class="box">Lorem ipsum dolora.</div>
+      <div class="box2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita,
+        ipsam. Eius repellat minima odit soluta molestias nam, et illum modi?
+      </div>
+    </div>
+  </body>
+</html>

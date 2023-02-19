@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Box Sizing</title>
+    <style>
+        .parent{
+             background: red;
+            margin: 30px;
+            width: 500px;
+        }
+        .child{
+             background: yellow;
+            width: 500px;
+            border:5px solid black;
+            padding:10px;
+            /* box-sizing: content-box; */ 
+            /* content-box will make changes outside the width box  */
+            box-sizing: border-box;
+            /* border box will adjust within given width */
+        }
+    </style>
+</head>
+<body>
+    <div class="parent">
+        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nulla est ducimus consequuntur ullam laborum
+        mollitia inventore, eius facilis eligendi similique, aut ratione corrupti optio asperiores quis deserunt dolore
+        molestias cum. Error, id architecto.
+        <div class="child">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Obcaecati nulla est ducimus consequuntur ullam laborum
+            mollitia inventore, eius facilis eligendi similique, aut ratione corrupti optio asperiores quis deserunt dolore
+            molestias cum. Error, id architecto.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Size and positon</title>
+    <style>
+        /* em -unit relative to parent font size 
+        if parent element has font size 12px and child is 3em then child has 36px font size */
+        /* rem -unit relative to root font size (html tag size default 16px) */
+        /* vw - unit relative to 1% viewport width 
+        if we give 50vw it will take half of total width */
+        /* vh - unit relative to 1% viewport height  */
+
+
+
+      
+
+        .container{
+            font-size: 13px;
+        }
+        .content{
+            font-size: 3em;
+            background: red;
+        }
+        .box2{
+            background: aqua;
+            width: 100vw;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p>This is Heading</p>
+        <div class="content">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sunt iure at molestiae nisi optio magni earum aliquid porro corrupti exercitationem.
+        </div>
+        <div class="box2">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Debitis aliquid perspiciatis necessitatibus rerum quod nemo culpa minima distinctio ipsa laborum?.
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="wclassth=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>CSS selectors</title>
+    <style>
+        /* selectors are used to select  an HTML elements for styling. */
+        
+        /* body is selector here  */
+        body{
+            text-align: center;
+     }
+     /* h1 is element selector used for tag name */
+     /* id selector with id  */
+     /* class selector with class  */
+
+        h1{
+            color: red;
+        }
+        div{
+            background-color: aqua;
+        }
+        /* we can group selectors  */
+        .red,h3{
+            background-color: red;
+            color: white;
+            border: 4px solid black;
+            padding: 2px;
+        }
+        
+        </style>
+</head>
+<body>
+    <div>
+        <!-- Inline style has more priority than internal and external styling  -->
+        <!-- Priority 1. Inline 
+        2. internal
+        3. external -->
+        <h1>Selectors page</h1>
+        <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Veritatis deserunt eius quos, harum architecto aliquam voluptate soluta eligendi asperiores quo molestias ex amet vel quisquam?</p>
+        <span class="red">first</span>
+        <span class="red">second</span>
+        <span class="red">third</span>
+        <span class="red">fourth</span>
+        <h3> we can group selectors example h3 with class red</h3>
+    </div>
+</body>
+</html>

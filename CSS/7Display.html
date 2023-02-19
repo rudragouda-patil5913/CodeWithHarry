@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Display and Fonts</title>
+    <style>
+
+        /* display :inline takes place as much required. No line breaks before and after. Setting width/height is not allowed. margin-top/bottom is not allowed. */
+        /* disply:block takes whole space  */
+        /* display :inline-block is same as inline, here height,width margin and padding is allowed */
+        /* display:none is used for removing it from dom. space is not blocked */
+        /* visbility: hidden is used to reserve space ,later i will come  */
+        /* text-align:center is used to center content and not entire element center/left/right/start/end/justify */
+
+        .section1{
+            border:2px solid black;
+            background: red;
+            /* visibility: hidden; */
+            display: inline-block;
+            height: 200px;
+            width: 400px;
+            padding:50px;
+            text-align: center;
+        }
+        .section2{
+            display: inline;
+            border:2px solid black;
+            background: aqua;
+        }
+    </style>
+</head>
+<body>
+    <div class="section1">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem voluptatibus quas eum fugiat maxime inventore sit mollitia, voluptatum perferendis autem beatae animi fuga necessitatibus, quam iure quo commodi sequi pariatur.
+    </div>
+    <div class="section2">
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Et non eligendi ipsam, ullam odit placeat alias in dolor fugit rerum architecto cumque expedita. Architecto id officiis sit aliquid culpa in.
+    </div>
+</body>
+</html>
